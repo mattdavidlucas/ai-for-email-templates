@@ -1,6 +1,4 @@
-# AI for Email Templates
-
-I originally wrote about this on my [website](https://www.mattdavidlucas.com/work/use-case-ai-for-email-templates), but wanted to write an in-depth document outlining my thinking and approach to applying AI to email template production.
+# AI-Driven Email Production System
 
 ## Background
 
@@ -62,7 +60,7 @@ Cursor quickly changed how I worked and how I approached my work. At the time of
 - **Rules:** A ruleset that applies to the specific work I was doing.
 - **Commands:** A precursor to agent skills that worked as slash commands to complete specific tasks.
 - **Plan Mode:** A feature I used heavily when needing to do large bulk audits across email templates, and also for coding new email template components.
-- **MCP:** When Figma released their MCP for Cursor, I immediately connected it, and started using it. When I paired it with Cursor's Plan Mode, the time savings were significant. Examples of the generated code can be viewed [here](https://github.com/mattdavidlucas/email-samples/tree/master/ck-email-module-samples).
+- **MCP:** When Figma released their MCP for Cursor, I immediately connected it, and started using it. When I paired it with Cursor's Plan Mode, the time savings were significant. Examples of the generated code can be viewed [here](https://github.com/mattdavidlucas/work-samples/tree/master/ck-email-module-samples).
 
 #### Rules:
 
