@@ -1,0 +1,253 @@
+<!-- rate-table-module -->
+<tr>
+  <td>
+    <table class="mb-87" width="77.8%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; width: 77.8%;" role="presentation">
+      <tr>
+        <td>
+          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; max-width: 288px; width: 100%;" role="presentation">
+            {{#if (hh:isFalsey modNHideHeaderRow)}}
+            <!-- Header Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    {{#if (hh:isFalsey modNHeader_FullBorder)}}<td class="mso-modN-border" width="14.583333333%" style="padding: 0 0 16px 0; width: 14.583333333%;">&nbsp;</td>
+                    <td class="mso-modN-border" width="4.166666667%" style="padding: 0 0 16px 0; width: 4.166666667%;">&nbsp;</td>{{/if}}
+                    <td {{#if (hh:isFalsey modNHeader_FullBorder)}}width="81.250000000%" {{/if}}style="border-bottom: {{ck:defaultable modNHeader_borderWeight '1px'}} solid {{ck:defaultable modNHeader_borderColor '#000000'}}; color: {{ck:defaultable modNHeader_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 16px; font-weight: {{ck:defaultable modNHeader_fontWeight 'bold'}}; mso-line-height-rule: exactly; line-height: 22px; padding: 0 0 16px 0; text-align: {{ck:defaultable modNHeader_textAlign 'center'}};{{#if (hh:isFalsey modNHeader_FullBorder)}} width: 81.250000000%;{{/if}}">{{#> modNHeader_Text}}{{/modNHeader_Text}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- End Header Row -->
+            {{/if}}
+
+            {{#if (hh:isFalsey modNHideRow1)}}
+            <!-- Row 1: Loan Amount Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow1_Col1_Text}}{{/modNRow1_Col1_Text}}</td>
+
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+                    
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow1_Col2_Text}}{{/modNRow1_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow1_Col3_Text}}{{/modNRow1_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow1_Col4_Text}}{{/modNRow1_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 1: End Loan Amount Row -->
+            {{/if}}
+
+            {{#if (hh:isFalsey modNHideRow2)}}
+            <!-- Row 2: Monthly Payment Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow2_Col1_Text}}{{/modNRow2_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow2_Col2_Text}}{{/modNRow2_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow2_Col3_Text}}{{/modNRow2_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow2_Col4_Text}}{{/modNRow2_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 2: End Monthly Payment Row -->
+            {{/if}}
+            
+            {{#if (hh:isFalsey modNHideRow3)}}
+            <!-- Row 3: Monthly Payment Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow3_Col1_Text}}{{/modNRow3_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow3_Col2_Text}}{{/modNRow3_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow3_Col3_Text}}{{/modNRow3_Col3_Text}}</td>
+                          
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow3_Col4_Text}}{{/modNRow3_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 3: End Monthly Payment Row -->
+            {{/if}}
+
+            <!-- Row 4: Monthly Payment Row -->
+            {{#if (hh:isFalsey modNHideRow4)}}
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow4_Col1_Text}}{{/modNRow4_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow4_Col2_Text}}{{/modNRow4_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow4_Col3_Text}}{{/modNRow4_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow4_Col4_Text}}{{/modNRow4_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>   
+            {{/if}}
+            <!-- Row 4: End Monthly Payment Row -->
+
+            {{#if modNShowRow5}}
+            <!-- Row 5: Monthly Payment Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow5_Col1_Text}}{{/modNRow5_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow5_Col2_Text}}{{/modNRow5_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow5_Col3_Text}}{{/modNRow5_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow5_Col4_Text}}{{/modNRow5_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 5: End Monthly Payment Row -->
+            {{/if}}
+            
+            {{#if modNShowRow6}}
+            <!-- Row 6: Monthly Payment Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow6_Col1_Text}}{{/modNRow6_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow6_Col2_Text}}{{/modNRow6_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow6_Col3_Text}}{{/modNRow6_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow6_Col4_Text}}{{/modNRow6_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 6: End Monthly Payment Row -->
+            {{/if}}
+
+            {{#if modNShowRow7}}
+            <!-- Row 7: Monthly Payment Row -->
+            <tr>
+              <td>
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                  <tr>
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="14.583333333%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; padding: 16px 0; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 14.583333333%;">{{#> modNRow7_Col1_Text}}{{/modNRow7_Col1_Text}}</td>
+                    
+                    <td {{#if (hh:isFalsey modNRow_FullBorder)}}class="mso-modN-border"{{/if}} width="4.166666667%" style="{{#if modNRow_FullBorder}}border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; {{/if}}padding: 16px 0; width: 4.166666667%;">&nbsp;</td>
+
+                    <td width="81.250000000%" style="border-bottom: {{ck:defaultable modNRow_borderWeight '1px'}} solid {{ck:defaultable modNRow_borderColor '#E9EEF0'}}; padding: 16px 0; width: 81.250000000%;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow7_Col2_Text}}{{/modNRow7_Col2_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow7_Col3_Text}}{{/modNRow7_Col3_Text}}</td>
+
+                          <td width="4.166666667%" style="width: 4.166666667%;">&nbsp;</td>
+
+                          <td width="24.305555556%" style="color: {{ck:defaultable modNRow_fontColor '#000000'}}; font-family: Arial, sans-serif; font-size: 14px; font-weight: normal; mso-line-height-rule: exactly; line-height: 16px; text-align: {{ck:defaultable modNRow_textAlign 'left'}}; width: 24.305555556%; word-break: break-all;">{{#> modNRow7_Col4_Text}}{{/modNRow7_Col4_Text}}</td>
+                        </tr>
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <!-- Row 7: End Monthly Payment Row -->
+            {{/if}}
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- End Mod N -->

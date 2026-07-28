@@ -1,0 +1,95 @@
+<!-- ck-turbotax-module-01 -->
+<tr>
+  <td style="padding-bottom: {{ck:defaultable modQSpacerBottomHt '0'}};">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+      <tr>
+        <td {{#if modQBgColorFullBleed}}bgcolor="{{modQBgColorFullBleed}}"{{/if}} {{#if modQBgColorFullBleed}}style="background-color: {{modQBgColorFullBleed}};"{{/if}}>
+          <!--[if mso]><table role="presentation" cellspacing="0" cellpadding="0" border="0" width="375" align="center" style="width: 375px;"><tr><td><![endif]-->
+          <!-- Start 375px container -->
+          <table {{#if modQBgColorModuleMobile}}class="mb-mw-100"{{/if}} {{#if modQBgColorModule}}bgcolor="{{modQBgColorModule}}"{{/if}} width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="{{#if modQBgColorModule}}background-color: {{modQBgColorModule}};{{/if}} border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 375px;" role="presentation">
+            <tr>
+              <td>
+                {{#if (hh:isFalsey modQNoLink)}}<a href="{{#if standardLinks}}{{> common/emailClickTracking content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') content_section='modQ' system_eventCode=eventCode experimentRedirectParameters=modQExperimentRedirectParameters }}{{else if eventCode}}{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=eventCode content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') content_section='modQ' experimentRedirectParameters=modQExperimentRedirectParameters }}{{else if deepEmailLinks}}{{> common/deepEmailClickTracking content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') content_section='modQ' system_eventCode=eventCode experimentRedirectParameters=modQExperimentRedirectParameters }}{{else if plDeepLink}}{{> common/plDeepLinkEmailClickTracking content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') content_section='modQ' system_eventCode=campaignEventCode lightbox_destination=lightboxDestination experimentRedirectParameters=heroExperimentRedirectParameters }}{{else if intlLinks}}{{> common/emailClickTrackingIntl content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') system_eventCode=eventCode content_section='modQ' }}{{else}}{{> common/deepLinkClickTracking content_link=modQLinkUrl content_linkText=(ck:defaultable content_linkText 'modQText') content_section='modQ' system_eventCode=eventCode experimentRedirectParameters=modQExperimentRedirectParameters }}{{/if}}" style="text-decoration: none;" target="_blank">{{/if}}
+                <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 375px;" role="presentation">
+                  <tr>
+                    <!-- Column 1 -->
+                    <td class="{{#if (hh:eq modQColumn1Type 'image')}}mso-modQ-imgCol{{else}}mso-modQ-textCol{{/if}}" align="center" {{#if modQBgColorColumn1}}bgcolor="{{modQBgColorColumn1}}"{{/if}} valign="middle" style="{{#if modQBgColorColumn1}}background-color: {{modQBgColorColumn1}};{{/if}} text-align: center; vertical-align: middle; {{#if (hh:eq modQColumn1Type 'image')}}width: 50.133333333%;{{else}}width: 49.866666667%;{{/if}}">
+                      {{#if (hh:eq modQColumn1Type 'image')}}
+                      <!-- Image Column -->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td align="center"><img src="{{> common/mediaUrl}}{{modQColumn1ImgSrc}}" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none; width: 100%; height: auto;" width="{{ck:defaultable modQColumn1ImgWidth '188'}}" height="{{ck:defaultable modQColumn1ImgHeight '220'}}" alt="{{ck:defaultable modQColumn1ImgAlt ''}}" border="0" /></td>
+                        </tr>
+                      </table>
+                      {{else}}
+                      <!-- Text Column -->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td class="mso-modQ-textColL-pad" style="padding: 0 9.090909091% 0 13.368983957%;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                              <!-- Headline -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modQColumn1HeadlineColor '#FFFFFF'}}; font-weight: {{ck:defaultable modQColumn1HeadlineFontWeight 'bold'}}; font-family: {{ck:defaultable modQColumn1HeadlineFontFamily 'Arial, sans-serif'}}; font-size: 18px; line-height: 24px; padding-bottom: 8px; text-align: left;">{{#> modQColumn1HeadlineText}}{{/modQColumn1HeadlineText}}</td>
+                              </tr>
+                              <!-- End Headline -->
+                              
+                              <!-- Copy -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modQColumn1CopyColor '#FFFFFF'}}; font-weight: {{ck:defaultable modQColumn1CopyFontWeight 'normal'}}; font-family: {{ck:defaultable modQColumn1CopyFontFamily 'Arial, sans-serif'}}; font-size: 18px; line-height: 24px; text-align: left;">{{#> modQColumn1CopyText}}{{/modQColumn1CopyText}}</td>
+                              </tr>
+                              <!-- End Copy -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      {{/if}}
+                    </td>
+                    <!-- End Column 1 -->
+
+                    <!-- Column 2 -->
+                    <td class="{{#if (hh:eq modQColumn2Type 'image')}}mso-modQ-imgCol{{else}}mso-modQ-textCol{{/if}}" align="center" {{#if modQBgColorColumn2}}bgcolor="{{modQBgColorColumn2}}"{{/if}} valign="middle" style="{{#if modQBgColorColumn2}}background-color: {{modQBgColorColumn2}};{{/if}} text-align: center; vertical-align: middle; {{#if (hh:eq modQColumn2Type 'image')}}width: 50.133333333%;{{else}}width: 49.866666667%;{{/if}}">
+                      {{#if (hh:eq modQColumn2Type 'image')}}
+                      <!-- Image Column -->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td align="center"><img src="{{> common/mediaUrl}}{{modQColumn2ImgSrc}}" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none; width: 100%; height: auto;" width="{{ck:defaultable modQColumn2ImgWidth '188'}}" height="{{ck:defaultable modQColumn2ImgHeight '220'}}" alt="{{ck:defaultable modQColumn2ImgAlt ''}}" border="0" /></td>
+                        </tr>
+                      </table>
+                      {{else}}
+                      <!-- Text Column -->
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td class="mso-modQ-textColR-pad" style="padding: 0 13.368983957% 0 8.556149733%;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                              <!-- Headline -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modQColumn2HeadlineColor '#000000'}}; font-weight: {{ck:defaultable modQColumn2HeadlineFontWeight 'bold'}}; font-family: {{ck:defaultable modQColumn2HeadlineFontFamily 'Arial, sans-serif'}}; font-size: 18px; line-height: 24px; padding-bottom: 8px; text-align: left;">{{#> modQColumn2HeadlineText}}{{/modQColumn2HeadlineText}}</td>
+                              </tr>
+                              <!-- End Headline -->
+                              
+                              <!-- Copy -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modQColumn2CopyColor '#000000'}}; font-weight: {{ck:defaultable modQColumn2CopyFontWeight 'normal'}}; font-family: {{ck:defaultable modQColumn2CopyFontFamily 'Arial, sans-serif'}}; font-size: 18px; line-height: 24px; text-align: left;">{{#> modQColumn2CopyText}}{{/modQColumn2CopyText}}</td>
+                              </tr>
+                              <!-- End Copy -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                      {{/if}}
+                    </td>
+                    <!-- End Column 2 -->
+                  </tr>
+                </table>
+                {{#if (hh:isFalsey modQNoLink)}}</a>{{/if}}
+              </td>
+            </tr>
+          </table>
+          <!-- End 375px container -->
+          <!--[if mso]></td></tr></table><![endif]-->
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- End Mod Q -->

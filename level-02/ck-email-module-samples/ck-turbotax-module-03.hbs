@@ -1,0 +1,101 @@
+<!-- ck-turbotax-module-03 -->
+<tr>
+  <td style="padding-bottom: {{ck:defaultable modSSpacerBottomHt '0'}};">
+    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+      <tr>
+        <td {{#if modSBgColorFullBleed}}bgcolor="{{modSBgColorFullBleed}}"{{/if}} style="{{#if modSBgColorFullBleed}}background-color: {{modSBgColorFullBleed}};{{/if}} padding-top: {{ck:defaultable modSInnerSpacerTopHt '32px'}}; padding-bottom: {{ck:defaultable modSInnerSpacerBottomHt '32px'}};">
+          <table class="mb-87" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+            <tr>
+              <td>
+                <!-- Start 375px container -->
+                <table class="mb-mw-100" width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 375px;" role="presentation">
+                  <tr>
+                    <td>
+                      <table width="325" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 325px;" role="presentation">
+                        {{#if modSHeadlineText}}
+                        <!-- Headline -->
+                        <tr>
+                          <td style="color: {{ck:defaultable modSHeadlineColor '#FFFFFF'}}; font-weight: {{ck:defaultable modSHeadlineFontWeight 'bold'}}; font-family: {{ck:defaultable modSHeadlineFontFamily 'Arial, sans-serif'}}; font-size: 18px; line-height: 24px; text-align: center; padding-bottom: 16px;">{{#> modSHeadlineText}}{{/modSHeadlineText}}</td>
+                        </tr>
+                        <!-- End Headline -->
+                        {{/if}}
+                        
+                        <!-- Two Column Section -->
+                        <tr>
+                          <td>
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                              <tr>
+                                <!-- Column 1 -->
+                                <td align="center" valign="top" style="text-align: center; vertical-align: top; width: 47.384615385%;">
+                                  <a href="{{#if standardLinks}}{{> common/emailClickTracking content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn1ExperimentRedirectParameters }}{{else if eventCode}}{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=eventCode content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') content_section='modS' experimentRedirectParameters=modSColumn1ExperimentRedirectParameters }}{{else if deepEmailLinks}}{{> common/deepEmailClickTracking content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn1ExperimentRedirectParameters }}{{else if plDeepLink}}{{> common/plDeepLinkEmailClickTracking content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') content_section='modS' system_eventCode=campaignEventCode lightbox_destination=lightboxDestination experimentRedirectParameters=modSColumn1ExperimentRedirectParameters }}{{else if intlLinks}}{{> common/emailClickTrackingIntl content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') system_eventCode=eventCode content_section='modS' }}{{else}}{{> common/deepLinkClickTracking content_link=modSColumn1LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn1Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn1ExperimentRedirectParameters }}{{/if}}" style="text-decoration: none;" target="_blank">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                                      <!-- Column 1 Image -->
+                                      <tr>
+                                        <td align="center" valign="middle" style="text-align: center; vertical-align: middle;"><img src="{{> common/mediaUrl}}{{modSColumn1ImgSrc}}" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none; width: 100%; height: auto;" width="154" height="154" alt="{{ck:defaultable modSColumn1ImgAlt ''}}" border="0" /></td>
+                                      </tr>
+                                      <!-- End Column 1 Image -->
+
+                                      <!-- Column 1 Link Text -->
+                                      <tr>
+                                        <td style="padding-top: 8px;">
+                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                                            <tr>
+                                              <td style="color: {{ck:defaultable modSLinkTextColor '#FFFFFF'}}; font-weight: {{ck:defaultable modSLinkTextFontWeight 'bold'}}; font-family: {{ck:defaultable modSLinkTextFontFamily 'Arial, sans-serif'}}; font-size: 16px; line-height: 22px; text-align: left; text-decoration: underline;">{{#> modSColumn1LinkText}}{{/modSColumn1LinkText}}</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!-- End Column 1 Link Text -->
+                                    </table>
+                                  </a>
+                                </td>
+                                <!-- End Column 1 -->
+
+                                <!-- Spacer -->
+                                <td style="width: 5.230769231%;">&nbsp;</td>
+                                <!-- End Spacer -->
+
+                                <!-- Column 2 -->
+                                <td align="center" valign="top" style="text-align: center; vertical-align: top; width: 47.384615385%;">
+                                  <a href="{{#if standardLinks}}{{> common/emailClickTracking content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn2ExperimentRedirectParameters }}{{else if eventCode}}{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=eventCode content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') content_section='modS' experimentRedirectParameters=modSColumn2ExperimentRedirectParameters }}{{else if deepEmailLinks}}{{> common/deepEmailClickTracking content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn2ExperimentRedirectParameters }}{{else if plDeepLink}}{{> common/plDeepLinkEmailClickTracking content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') content_section='modS' system_eventCode=campaignEventCode lightbox_destination=lightboxDestination experimentRedirectParameters=modSColumn2ExperimentRedirectParameters }}{{else if intlLinks}}{{> common/emailClickTrackingIntl content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') system_eventCode=eventCode content_section='modS' }}{{else}}{{> common/deepLinkClickTracking content_link=modSColumn2LinkUrl content_linkText=(ck:defaultable content_linkText 'modSColumn2Text') content_section='modS' system_eventCode=eventCode experimentRedirectParameters=modSColumn2ExperimentRedirectParameters }}{{/if}}" style="text-decoration: none;" target="_blank">
+                                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                                      <!-- Column 2 Image -->
+                                      <tr>
+                                        <td align="center" valign="middle" style="text-align: center; vertical-align: middle;"><img src="{{> common/mediaUrl}}{{modSColumn2ImgSrc}}" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none; width: 100%; height: auto;" width="154" height="154" alt="{{ck:defaultable modSColumn2ImgAlt ''}}" border="0" /></td>
+                                      </tr>
+                                      <!-- End Column 2 Image -->
+
+                                      <!-- Column 2 Link Text -->
+                                      <tr>
+                                        <td style="padding-top: 8px;">
+                                          <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                                            <tr>
+                                              <td style="color: {{ck:defaultable modSLinkTextColor '#FFFFFF'}}; font-weight: {{ck:defaultable modSLinkTextFontWeight 'bold'}}; font-family: {{ck:defaultable modSLinkTextFontFamily 'Arial, sans-serif'}}; font-size: 16px; line-height: 22px; text-align: left; text-decoration: underline;">{{#> modSColumn2LinkText}}{{/modSColumn2LinkText}}</td>
+                                            </tr>
+                                          </table>
+                                        </td>
+                                      </tr>
+                                      <!-- End Column 2 Link Text -->
+                                    </table>
+                                  </a>
+                                </td>
+                                <!-- End Column 2 -->
+                              </tr>
+                            </table>
+                          </td>
+                        </tr>
+                        <!-- End Two Column Section -->
+                      </table>
+                    </td>
+                  </tr>
+                </table>
+                <!-- End 375px container -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- End Mod S -->

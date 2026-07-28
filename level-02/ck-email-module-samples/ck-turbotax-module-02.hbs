@@ -1,0 +1,67 @@
+<!-- ck-turbotax-module-02 -->
+<tr>
+  <td style="padding-bottom: {{ck:defaultable modRSpacerBottomHt '0'}};">
+    <table class="mb-87" width="77.8%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; margin: 0 auto; width: 77.8%" role="presentation">
+      <tr>
+        <td align="center" valign="top" style="text-align: center; vertical-align: top;">
+          <table class="mb-mw-100" align="center" width="375" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; margin: 0 auto; width: 100%; max-width: 375px;" role="presentation">
+            <tr>
+              <td>
+                <table class="mb-mw-100" width="325" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%; max-width: 325px;" role="presentation">
+                  <tr>
+                    <!-- Left Column: Image -->
+                    <td align="center" valign="middle" style="text-align: center; vertical-align: middle; width: 163px;">{{#if (hh:isFalsey modRNoLink)}}<a {{#if eventCode}} href="{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=modReventCode1 content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                    {{else if deepEmailLinks}} href="{{> common/deepEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                    {{else if plDeepLink}} href="{{> common/plDeepLinkEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 lightbox_destination=lightboxDestination experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                    {{else if intlLinks}} href="{{> common/emailClickTrackingIntl content_link=modRLinkUrl content_linkText='modR_Image' system_eventCode=modReventCode1 content_section='modR' }}"
+                    {{else if standardLinks}} href="{{> common/emailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                    {{else}} href="{{> common/deepLinkClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                    {{/if}} style="color: {{ck:defaultable modRHeadlineColor '#000000'}}; font-family: {{ck:defaultable modRCopyFontFamily 'Arial, sans-serif'}}; font-size: 16px; text-decoration: none!important;" target="_blank">{{/if}}<img src="{{> common/mediaUrl}}{{modRImgSrc}}" style="border: none; display: block; -ms-interpolation-mode: bicubic; outline: none; height: auto;" width="163" height="163" alt="{{ck:defaultable modRImgAlt ''}}" border="0" />{{#if (hh:isFalsey modRNoLink)}}</a>{{/if}}</td>
+                    <!-- End Left Column: Image -->
+
+                    <!-- Right Column: Text Content -->
+                    <td class="mb-auto" align="center" valign="middle" style="text-align: center; vertical-align: middle; width: 162px;">
+                      <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                        <tr>
+                          <td style="padding-left: 16px;">
+                            <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="border-collapse: collapse; width: 100%" role="presentation">
+                              <!-- Headline -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modRHeadlineColor '#000000'}}; font-weight: {{ck:defaultable modRHeadlineFontWeight 'bold'}}; font-family: {{ck:defaultable modRHeadlineFontFamily 'Arial, sans-serif'}}; font-size: 16px; line-height: 22px; padding-bottom: 8px; text-align: left;">{{#if (hh:isFalsey modRNoLink)}}<a {{#if eventCode}} href="{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=modReventCode1 content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if deepEmailLinks}} href="{{> common/deepEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if plDeepLink}} href="{{> common/plDeepLinkEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 lightbox_destination=lightboxDestination experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if intlLinks}} href="{{> common/emailClickTrackingIntl content_link=modRLinkUrl content_linkText='modR_Image' system_eventCode=modReventCode1 content_section='modR' }}"
+                                {{else if standardLinks}} href="{{> common/emailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else}} href="{{> common/deepLinkClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{/if}} style="color: {{ck:defaultable modRHeadlineColor '#000000'}}; text-decoration: none !important;" target="_blank">{{/if}}{{#> modRHeadlineText}}{{/modRHeadlineText}}{{#if (hh:isFalsey modRNoLink)}}</a>{{/if}}</td>
+                              </tr>
+                              <!-- End Headline -->
+
+                              <!-- Copy -->
+                              <tr>
+                                <td style="color: {{ck:defaultable modRCopyColor '#000000'}}; font-weight: {{ck:defaultable modRCopyFontWeight 'normal'}}; font-family: {{ck:defaultable modRCopyFontFamily 'Arial, sans-serif'}}; font-size: 16px; line-height: 22px; text-align: left;">{{#if (hh:isFalsey modRNoLink)}}<a {{#if eventCode}} href="{{> common/revenueClickTracking adcopy=adCopy eventinformation=eventInformation system_eventCode=modReventCode1 content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if deepEmailLinks}} href="{{> common/deepEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if plDeepLink}} href="{{> common/plDeepLinkEmailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 lightbox_destination=lightboxDestination experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else if intlLinks}} href="{{> common/emailClickTrackingIntl content_link=modRLinkUrl content_linkText='modR_Image' system_eventCode=modReventCode1 content_section='modR' }}"
+                                {{else if standardLinks}} href="{{> common/emailClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{else}} href="{{> common/deepLinkClickTracking content_link=modRLinkUrl content_linkText='modR_Image' content_section='modR' system_eventCode=modReventCode1 experimentRedirectParameters=modRExperimentRedirectParameters1 }}"
+                                {{/if}} style="color: {{ck:defaultable modRHeadlineColor '#000000'}}; text-decoration: none !important;" target="_blank">{{/if}}{{#> modRCopyText}}{{/modRCopyText}}{{#if (hh:isFalsey modRNoLink)}}</a>{{/if}}</td>
+                              </tr>
+                              <!-- End Copy -->
+                            </table>
+                          </td>
+                        </tr>
+                      </table>
+                    </td>
+                    <!-- End Right Column: Text Content -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </td>
+</tr>
+<!-- End Mod R -->
