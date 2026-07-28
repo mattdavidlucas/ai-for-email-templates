@@ -5,7 +5,7 @@ litmus() {
   MAILGUN_API_KEY=""
 
   # Set Litmus email address here:
-  recipient_email="creditkarma.proofs@litmusemail.com"
+  recipient_email="******.proofs@litmusemail.com"
 
   echo "Please provide the path to your HTML file and press Enter:"
   read -r html_file_path
@@ -32,8 +32,8 @@ litmus() {
   #-F "to=${recipient_email}" \
   http_status=$(curl -s -o /dev/null -w "%{http_code}" -X POST \
     -u "${MAILGUN_API_USERNAME}:${MAILGUN_API_KEY}" \
-    "https://api.mailgun.net/v3/test.litmus-qa.com/messages" \
-    -F "from=Marketing QA <postmaster@test.litmus-qa.com>" \
+    "https://api.mailgun.net/v3/*****/messages" \
+    -F "from=Marketing QA <postmaster@*****>" \
     -F "to=${recipient_email}" \
     -F "subject=${email_subject}" \
     --form-string "html=${cleaned_html_content}" \
